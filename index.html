@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+</head>
+<style>
+body{
+    margin: 50px;
+    background-color: lightblue;
+   
+    padding: 20px;
+}
+ button{
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+ }
+</style>
+<body>
+    <h1>Welcome to Javascript</h1>
+
+    <h2>The alert() Method</h2>
+    <p>Click the button to see line-breaks in an alert box.</p>  
+    <button onclick="myalert()">Click Here to see alert</button>
+
+    <h2>Onclick Paragraph & image change method</h2>
+    <div class="container">
+        <p id="para"> What is Javascript?</p>
+        <button type="button" onclick="myFunction()">Click here to view answer</button>
+    </div><br>
+
+    <h1>In this image external script is used</h1>
+    <img src="pic1.jpg" alt="pic1" class="responsive" id="image" width="500px" height="300px" style="border: 5px solid black;"><br>
+    <button onclick="changeImage()">Click here to change Image</button>
+
+    <h1>console.log command </h1>
+    <p>console.log command is use to print output on the console screen.</p>
+
+    <h1>logical operator</h1>
+    <p>1. The && Operator return true if both expression are ture, otherwise false.</p>
+    <p id="demo"></p>
+
+    <p>2. The || returns true if one or both expressions are true, otherwise it returns false.</p>
+    <p id="demo2"></p>
+
+    <p>3. The NOT operator (!) returns true for false statements and false for true statements.</p>
+
+    <p id="demo3"></p>
+    <h1>This line is print with help of document.write command </h1>
+
+
+    <script>    
+        function myalert() {
+        alert("Hello\nHow are you?");
+        }
+    
+        console.log("Hello world");
+        alert("Welcome to page");
+        function myFunction(){
+            document.getElementById(id="para").innerHTML ="Javascript is a scripting language that enadles you to create dynamically updating content, control multimedia, animate images and etc."
+        }
+        
+        document.write("Hello World from JavaScript!")
+
+        var a = 78;
+        var b = 22;
+        console.log(a);  
+        
+        console.log("Value of a + b is "+ (a + b));
+        console.log("Value of a - b is "+ (a - b));
+        console.log("Value of a * b is "+ (a * b));
+        console.log("Value of a / b is "+ (a / b));
+
+        let p = 6;
+        let q = 3;
+
+        document.getElementById("demo").innerHTML = 
+        (p < 10 && q > 1) + "<br>" + (p < 10 && q < 1);
+
+
+        let x = 6;
+        let y = 3;
+
+        document.getElementById("demo2").innerHTML = 
+        (x == 5 || y == 5) + "<br>" + 
+        (x == 6 || y == 0) + "<br>" + 
+        (x == 0 || y == 3) + "<br>" + 
+        (x == 6 || y == 3);
+
+        let r = 6;
+        let s = 3;
+
+        document.getElementById("demo3").innerHTML = 
+        !(r === s) + "<br>" + 
+        !(r > s);
+
+    </script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
